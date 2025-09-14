@@ -1,0 +1,91 @@
+
+@import "tailwindcss";
+
+/* font for body */
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* font for logo */
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+
+
+
+body {
+  font-family: "Funnel Sans", sans-serif;
+  font-optical-sizing: auto;
+
+}
+
+.logo {
+  font-family: "Covered By Your Grace", cursive;
+}
+
+@theme {
+  --color-brand : #8E44AD
+}
+
+.bg-c{
+  background-color: whitesmoke;
+}
+
+.loader {
+  width: 100px;
+  height: 40px;
+  --g: radial-gradient(farthest-side,#8E44AD calc(95% - 3px),#8E44AD calc(100% - 3px) 98%,#0000 101%) no-repeat;
+  background: var(--g), var(--g), var(--g);
+  background-size: 30px 30px;
+  animation: l9 1s infinite alternate;
+}
+@keyframes l9 {
+  0% {
+    background-position: 0 50%, 50% 50%, 100% 50%;
+  }
+  20% {
+    background-position: 0 0, 50% 50%, 100% 50%;
+  }
+  40% {
+    background-position: 0 100%, 50% 0, 100% 50%;
+  }
+  60% {
+    background-position: 0 50%, 50% 100%, 100% 0;
+  }
+  80% {
+    background-position: 0 50%, 50% 50%, 100% 100%;
+  }
+  100% {
+    background-position: 0 50%, 50% 50%, 100% 50%;
+  }
+}
+
+.lighting-btn {
+  box-shadow: 0 0 0px rgba(255, 255, 255, 0.6);
+  transition: box-shadow 0.4s ease;
+}
+
+.lighting-btn:hover {
+  box-shadow: 0 0 15px #8E44AD;
+}
+
+.fade-enter{
+   opacity: 0;
+}
+.fade-exit{
+   opacity: 0;
+}
+.fade-enter-active{
+   opacity: 1;
+}
+.fade-exit-active{
+   opacity: 0;
+}
+.fade-enter-active,
+.fade-exit-active{
+   transition: opacity 500ms;
+}
+
+.dark .active svg {
+  fill: rgb(237, 16, 237);
+}
+
+.light .active svg {
+  fill: black;
+}
