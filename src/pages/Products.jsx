@@ -79,7 +79,7 @@ const deleteHandler = async(e, product) => {
     <div className='grid grid-cols-2 space-x-2 max-w-100 md:max-w-300 mx-auto p-4 md:grid-cols-4 md:space-x-4 flex-wrap select-none'>
       
       { loading && <div className='loader w-10 h-10 mt-20 ml-50 md:w-20 md:h-20 md:mt-40 md:ml-130'></div>}
-      { error && <p>{error}</p>}
+
       { !error && products && products.map((product) => (
         <div onClick={() => productDetail(product.id)} className='ring-2 ring-purple-500 shadow-lg w-35 md:w-68 cursor-pointer h-auto p-5 flex flex-col mt-5 justify-center items-center bg-white rounded-xl'>
 

@@ -35,11 +35,11 @@ export default function Register() {
           {isDark && <img src={bg} alt="" className='w-120 h-120 rounded-l-xl' />}
 
           {!isDark && 
-          <div className='w-270 h-120 bg-[#f26925] flex justify-center items-center rounded-l-xl'>
+          <div className='w-270 h-120 bg-[#181743] flex justify-center items-center rounded-l-xl'>
             <img src={bgl} alt="" className='w-70 h-80 rounded-l-xl '/>
           </div>}
 
-          <div className={`flex flex-col justify-center  w-[100%] h-120 mt-0 items-center rounded-r-xl ${isDark? 'bg-black' : 'bg-[#f26925]'}`}>
+          <div className={`flex flex-col justify-center  w-[100%] h-120 mt-0 items-center rounded-r-xl ${isDark? 'bg-black' : 'bg-[#181743]'}`}>
             <div className={`w-80 h-auto backdrop-blur-3xl ring-2 rounded-xl p-5 py-16 space-y-3 ${isDark? 'text-brand' : 'text-white'}`}>
                 <h2 className='font-bold text-xl'>Register Form</h2>
 
